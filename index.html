@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Shreyas | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; margin: 0; background: #f9f9f9; color: #333; transition: background 0.3s, color 0.3s; }
+        header { background: #0077cc; color: white; padding: 1rem 2rem; text-align: center; position: relative; }
+        nav { margin-top: 10px; }
+        nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+        .toggle-theme { position: absolute; top: 1rem; right: 1rem; background: white; color: #0077cc; border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        section { padding: 2rem; }
+        .skills, .projects, .certifications { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .card { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: background 0.3s, color 0.3s; }
+        footer { background: #0077cc; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+        .contact a { color: #0077cc; text-decoration: none; font-weight: bold; }
+        body.dark { background: #1e1e1e; color: #eee; }
+        body.dark header { background: #111; }
+        body.dark footer { background: #111; }
+        body.dark .card { background: #333; color: #eee; }
+        body.dark .contact a { color: #66b2ff; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sai Shreyas</h1>
+        <p>Java Full Stack Developer | Pega Certified Professional</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+    </header>
+
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>I am a Computer Science graduate passionate about building efficient web and mobile applications. I have a background in Electronics and Communication Engineering from BVRIT. I love cricket, traveling, and painting. My strengths are team building, communication, and creative problem-solving.</p>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="card">Java (Core + Advanced)</div>
+            <div class="card">HTML, CSS, JavaScript</div>
+            <div class="card">React.js</div>
+            <div class="card">MySQL</div>
+            <div class="card">API Integration</div>
+            <div class="card">Pega CSA & CSSA Certified</div>
+        </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Travel Booking E-commerce Website</h3>
+                <p>Developed the front-end using React.js, HTML, and CSS to facilitate seamless travel bookings.</p>
+            </div>
+            <div class="card">
+                <h3>Mobile Application Using Pega</h3>
+                <p>Designed workflows and automation processes using Pega platform to improve mobile app experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" data-aos="fade-up">
+        <h2>Certifications</h2>
+        <div class="certifications">
+            <div class="card">Java Certified</div>
+            <div class="card">HTML Certified</div>
+            <div class="card">Pega CSA (Certified System Architect)</div>
+            <div class="card">Pega CSSA (Certified Senior System Architect)</div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sai Shreyas. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        function toggleTheme() {
+            document.body.classList.toggle('dark');
+        }
+    </script>
+</body>
+</html>
